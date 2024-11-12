@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jasa Antar Jemput Gunung Pati</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>Antar Jemput Gunung Pati</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#services">Layanan</a></li>
+        <li><a href="#order">Pesan Sekarang</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="hero-text">
+      <h2>Layanan Antar Jemput yang Cepat dan Aman</h2>
+      <p>Jasa antar jemput untuk keperluan apapun, dengan kenyamanan dan ketepatan waktu.</p>
+      <a href="#order" class="cta-btn">Pesan Sekarang</a>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Menyediakan Layanan</h2>
+    <div class="service">
+      <h3>Antar Jemput Kuliah</h3>
+      <p>Layanan khusus antar jemput ke kampus dengan keamanan dan kenyamanan yang terjamin.</p>
+    </div>
+    <div class="service">
+      <h3>Antar Jemput Kerja</h3>
+      <p>Jasa antar jemput karyawan untuk mempermudah mobilitas Anda setiap hari kerja.</p>
+    </div>
+    <div class="service">
+      <h3>Antar Jemput Pribadi</h3>
+      <p>Layanan fleksibel untuk kebutuhan pribadi Anda, siap antar jemput sesuai permintaan.</p>
+    </div>
+  </section>
+
+  <section id="order" class="order">
+    <h2>Pesan Layanan Antar Jemput</h2>
+    <form id="orderForm">
+      <label for="name">Nama</label>
+      <input type="text" id="name" placeholder="Nama" required>
+
+      <label for="pickup">Alamat Penjemputan</label>
+      <input type="text" id="pickup" placeholder="Alamat Penjemputan" required>
+
+      <label for="destination">Alamat Tujuan</label>
+      <input type="text" id="destination" placeholder="Alamat Tujuan" required>
+      
+      <label for="contact">Nomor yang Bisa di Hubungi</label>
+      <input type="text" id="contact" placeholder="Nomor yang Bisa di Hubungi" required>
+
+      <button type="submit" class="submit-btn" onclick="sendToWhatsApp()">Pesan Sekarang</button>
+    </form>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Kontak Driver</h2>
+    <p>Untuk informasi lebih lanjut atau pertanyaan, hubungi driver di:</p>
+    <div class="social-links">
+      <a href="https://wa.me/628895885691" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 70px;">
+      </a>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Jasa Antar Jemput Unnes.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
