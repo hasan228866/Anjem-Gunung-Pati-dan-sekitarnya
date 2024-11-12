@@ -13,7 +13,9 @@
         <h1>Antar Jemput Gunung Pati</h1>
       </div>
       <ul class="nav-links">
+        <li><a href="#services">Layanan</a></li>
         <li><a href="#order">Pesan Sekarang</a></li>
+        <li><a href="#contact">Kontak</a></li>
       </ul>
     </nav>
   </header>
@@ -45,17 +47,14 @@
   <section id="order" class="order">
     <h2>Pesan Layanan Antar Jemput</h2>
     <form id="orderForm">
-      <label for="name">Nama</label>
-      <input type="text" id="name" placeholder="Nama" required>
+      <input type="text" id="nama" placeholder="Nama" required>
 
-      <label for="pickup">Alamat Penjemputan</label>
-      <input type="text" id="pickup" placeholder="Alamat Penjemputan" required>
+      <input type="text" id="alamatPenjemputan" placeholder="Alamat Penjemputan" required>
 
-      <label for="destination">Alamat Tujuan</label>
-      <input type="text" id="destination" placeholder="Alamat Tujuan" required>
-      
+      <input type="text" id="alamatTujuan" placeholder="Alamat Tujuan" required>
 
-      <button type="submit" class="submit-btn" onclick="sendToWhatsApp()">Pesan Sekarang</button>
+      <button type="button" class="cta-btn" onclick="kirimPesan()">Pesan Sekarang</button>
+
     </form>
   </section>
 
