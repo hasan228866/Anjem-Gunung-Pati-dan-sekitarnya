@@ -1,21 +1,14 @@
-function sendToWhatsApp() {
-  // Ambil nilai dari setiap input
-  const name = document.getElementById("name").value;
-  const pickup = document.getElementById("pickup").value;
-  const destination = document.getElementById("destination").value;
-
-  // Buat pesan yang akan dikirim ke WhatsApp
-  const message = `Halo, saya ingin memesan layanan antar jemput dengan rincian sebagai berikut:%0A%0A%0A` +
-                  `Nama: ${name}%0A` +
-                  `Alamat Penjemputan: ${pickup}%0A` +
-                  `Alamat Tujuan: ${destination}%0A` +
-
-  // Ganti dengan nomor WhatsApp tujuan (gunakan format internasional tanpa tanda '+')
-  const whatsappNumber = "628895885691"; // Contoh: 6281234567890 untuk nomor Indonesia
+function kirimPesan() {
+  // Ambil nilai dari input
+  const nama = document.getElementById("nama").value;
+  const alamatPenjemputan = document.getElementById("alamatPenjemputan").value;
+  const alamatTujuan = document.getElementById("alamatTujuan").value;
 
   // Buat URL WhatsApp
-  const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
+  const nomorWhatsApp = "628895885691"; // Ganti dengan nomor tujuan
+  const pesan = `Halo, saya ${nama}. Saya ingin memesan layanan antar jemput dari ${alamatPenjemputan} ke ${alamatTujuan}.`;
+  const url = `https://wa.me/${nomorWhatsApp}?text=${encodeURIComponent(pesan)}`;
 
-  // Buka link WhatsApp di tab baru
-  window.open(whatsappURL, "_blank");
+  // Buka URL WhatsApp
+  window.open(url, "_blank");
 }
