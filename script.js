@@ -6,7 +6,7 @@ function kirimPesan() {
 
   // Buat URL WhatsApp
   const nomorWhatsApp = "628895885691"; // Ganti dengan nomor tujuan
-  const pesan = `Halo driver ganteng,aku mau pesen layanan anjem\n Nama: ${nama}\n Lokasi penjemputan: ${alamatPenjemputan}\n Lokasi tujuan: ${alamatTujuan}`;
+  const pesan = `Halo driver ganteng,aku mau pesen layanan anjem\nNama: ${nama}\nLokasi penjemputan: ${alamatPenjemputan}\nLokasi tujuan: ${alamatTujuan}`;
   const url = `https://wa.me/${nomorWhatsApp}?text=${encodeURIComponent(pesan)}`;
 
   // Buka URL WhatsApp
