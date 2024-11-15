@@ -1,176 +1,169 @@
-/* Reset */
+/* Reset margin dan padding */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body and basic setup */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f7f7f7;
-  color: #333;
-}
-
-/* Header */
-header {
-  background-color: #0044cc;
-  padding: 20px;
-}
-
-header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header .logo h1 {
-  color: #fff;
-  font-size: 24px;
-}
-
-header .nav-links {
-  list-style: none;
-  display: flex;
-}
-
-header .nav-links li {
-  margin: 0 15px;
-}
-
-header .nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-/* Hero Section */
-.hero {
-  background-color: #0059e6;
-  color: white;
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.hero h2 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.cta-btn {
-  background-color: #fff;
-  color: #0059e6;
-  padding: 10px 20px;
-  font-size: 18px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-.cta-btn:hover {
-  background-color: #0044cc;
-  color: #fff;
-}
-
-/* Services Section */
-.services {
-  padding: 60px 20px;
-  text-align: center;
-  background-color: #e6f2ff;
-}
-
-.services h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-.service {
-  margin-bottom: 30px;
-}
-
-.service h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.service p {
-  font-size: 18px;
-  color: #555;
-}
-
-/* Order Section */
-.order {
-  padding: 60px 20px;
-  background-color: #fff;
-  text-align: center;
-}
-
-.order h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-.order form {
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: #f0f8ff;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.order form label {
-  font-size: 18px;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.order form input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-}
-
-.order form .submit-btn {
-  background-color: #0044cc;
-  color: #fff;
-  padding: 15px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-.order form .submit-btn:hover {
-  background-color: #0033aa;
-}
-
-/* Contact Section */
-.contact {
-  padding: 60px 20px;
-  text-align: center;
-  background-color: #e6f2ff;
-}
-
-.contact p {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-/* Footer */
-footer {
-  background-color: #0044cc;
-  color: white;
-  text-align: center;
-  padding: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
   
-}
+  /* Latar belakang */
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #FF2929, #FF2929);
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    color: #ffffff;
+    padding: 30px 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    animation: slideDown 1s ease-out;
+  }
+  .header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .header p {
+    font-size: 16px;
+    opacity: 0.9;
+  }
+  
+  /* Animasi slide down untuk header */
+  @keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  /* Container utama */
+  .container {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 60px 50px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin-top: 150px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Judul layanan */
+  .container h2 {
+    font-size: 24px;
+    color: #FF2929;
+    margin-bottom: 10px;
+  }
+  
+  /* Deskripsi */
+  .description {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 30px;
+  }
+  
+  /* Kontainer tombol */
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Tombol */
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Ikon pada tombol */
+  .button .icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  /* Efek hover untuk tombol */
+  .button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 123, 255, 0.4);
+  }
+  
+  /* Warna khusus untuk tombol */
+  .antar-jemput {
+    background-color: #FF2929;
+  }
+  .antar-jemput:hover {
+    background-color: #ac0000;
+  }
+  .titip-makanan {
+    background-color: #FF2929;
+  }
+  .titip-makanan:hover {
+    background-color: #ac0000;
+  }
+  .profil-driver {
+    background-color: #FF2929;
+  }
+  .profil-driver:hover {
+    background-color: #ac0000;
+  }
+  
+  /* Footer */
+  .footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    animation: fadeIn 1.5s ease;
+  }
+  
+  /* Ikon sosial media pada footer */
+  .social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  .icon-link {
+    font-size: 20px;
+    color: #ffffff;
+    transition: transform 0.3s;
+  }
+  .icon-link:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Animasi fade in */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Responsif: Jika layar lebih lebar, tombol akan berjajar */
+  @media (min-width: 600px) {
+    .button-container {
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+  
